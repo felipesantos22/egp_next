@@ -4,8 +4,14 @@ import Carousel from "@/components/carousel";
 export default function Home() {
   return (
     <div>
-      <div className="mx-2 my-10">
+      <div className="mx-2 mt-20 mb-2">
         <Carousel />
+      </div>
+      <div className="bg-gray-50 h-40 mx-2 flex flex-col items-center justify-center text-center p-4">
+        <h1 className="text-3xl font-bold mt-4">EGITO VIAGENS</h1>
+        <p>
+          Escolha um determinado destino e vá em frente!
+        </p>
       </div>
       <div className="grid md:grid-cols-3 gap-6 p-2 bg-gray-50">
         <Card

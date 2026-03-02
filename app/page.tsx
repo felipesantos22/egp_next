@@ -2,7 +2,7 @@ import Card from "@/components/card";
 
 export default function Home() {
   return (
-    <div className="grid md:grid-cols-3 gap-6 p-10">
+    <div className="grid md:grid-cols-3 gap-6 p-2 bg-gray-50">
       <Card
         title="Pirâmides de Gizé"
         description="Pacote completo 7 dias"

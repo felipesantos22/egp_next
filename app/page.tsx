@@ -57,15 +57,17 @@ export default function Home() {
       <h1 className="text-center mt-15 mb-4 text-4xl font-bold">
         Experiências de nossos viajantes
       </h1>
-      <div className="flex justify-around mt-20 mb-20 mx-2 p-4">
-        <Image
-          src="/images/magazine.jpg"
-          alt="Experiências de nossos viajantes"
-          width={300}
-          height={200}
-        />
+      <div className="flex flex-wrap justify-around mt-10 mb-20 mx-2 p-4">
+        <div className="mb-4">
+          <Image
+            src="/images/magazine.jpg"
+            alt="Experiências de nossos viajantes"
+            width={300}
+            height={200}
+          />
+        </div>
         <div className="flex flex-col">
-          <p className="mt-4 mb-4 text-lg max-w-md text-justify">
+          <p className="mx-2 text-lg max-w-md text-justify">
             Viajar para a África é uma experiência ÚNICA, diferente de qualquer
             outra viagem que se possa fazer. Nossos clientes fazem questão de
             deixar isso claro através de seus depoimentos. É difícil mensurar a

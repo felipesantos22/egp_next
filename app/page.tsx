@@ -4,6 +4,8 @@ import { useState } from "react";
 import Card from "@/components/card";
 import Carousel from "@/components/carousel";
 import { pacotes } from "@/data/packets";
+import Image from "next/image";
+import Testimonials from "@/components/testimonials";
 
 export default function Home() {
   const [paisSelecionado, setPaisSelecionado] = useState("Todos");
@@ -23,7 +25,7 @@ export default function Home() {
       </div>
 
       <div className="bg-gray-50 h-40 mx-2 flex flex-col items-center justify-center text-center p-4">
-        <h1 className="text-3xl font-bold mt-4">Africa Tours</h1>
+        <h1 className="text-4xl font-bold mt-4">Africa Tours</h1>
         <p>Escolha um determinado destino e vá em frente!</p>
       </div>
 
@@ -51,6 +53,35 @@ export default function Home() {
             href={`/pacotes/${item.slug}`}
           />
         ))}
+      </div>
+      <h1 className="text-center mt-15 mb-4 text-4xl font-bold">
+        Experiências de nossos viajantes
+      </h1>
+      <div className="flex justify-around mt-20 mb-20 mx-2 p-4">
+        <Image
+          src="/images/magazine.jpg"
+          alt="Experiências de nossos viajantes"
+          width={300}
+          height={200}
+        />
+        <div className="flex flex-col">
+          <p className="mt-4 mb-4 text-lg max-w-md text-justify">
+            Viajar para a África é uma experiência ÚNICA, diferente de qualquer
+            outra viagem que se possa fazer. Nossos clientes fazem questão de
+            deixar isso claro através de seus depoimentos. É difícil mensurar a
+            satisfação e a felicidade de cada um, visto que, frequentemente,
+            recebemos ligações de agradecimento e relatos de viajantes que
+            retornam da África com a alma leve e uma nova visão sobre o mundo e
+            sobre suas próprias vidas. A África é uma viagem que transcende!
+            Acompanhem, clicando abaixo.
+          </p>
+          <button className="bg-amber-300 text-white px-4 py-2 rounded-md mt-4">
+            Ver mais
+          </button>
+        </div>
+      </div>
+      <div className="bg-[url('/images/img05.jpg')] bg-cover bg-center bg-fixed h-150 m-2 flex flex-col items-center justify-center text-center p-4 rounded-2xl shadow-lg">
+        <Testimonials />
       </div>
     </div>
   );

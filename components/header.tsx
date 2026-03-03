@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <header className="bg-gray-50 shadow-md py-4 fixed top-0 right-0 left-0 z-10">
       <div className="container mx-auto px-4 flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-gray-800">Egito Viagens</h1>
+        <h1 className="text-2xl font-bold text-gray-800">Africa Tours</h1>
         <nav>
           <ul className="flex space-x-4">
             <li>

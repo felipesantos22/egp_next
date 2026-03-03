@@ -22,21 +22,21 @@ export default function Carousel() {
       >
         <SwiperSlide>
           <img
-            src="https://picsum.photos/800/400?1"
+            src="/images/img01.jpg"
             className="w-full h-150 object-cover"
           />
         </SwiperSlide>
 
         <SwiperSlide>
           <img
-            src="https://picsum.photos/800/400?2"
+            src="/images/img02.jpg"
             className="w-full h-150 object-cover"
           />
         </SwiperSlide>
 
         <SwiperSlide>
           <img
-            src="https://picsum.photos/800/400?3"
+            src="/images/img04.jpg"
             className="w-full h-150 object-cover"
           />
         </SwiperSlide>

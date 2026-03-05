@@ -18,35 +18,35 @@ export default function Testimonials() {
       >
         <SwiperSlide>
           <div className="p-8 rounded-2xl shadow-md text-center bg-black/10">
-            <p className="text-lg italic">
+            <p className="text-lg italic text-white">
               "A viagem superou todas as expectativas!"
             </p>
-            <span className="block mt-4 font-semibold">— Maria Silva</span>
+            <span className="block mt-4 font-semibold text-white">— Maria Silva</span>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
           <div className="p-8 rounded-2xl shadow-md text-center  bg-black/10">
-            <p className="text-lg italic">
+            <p className="text-lg italic text-white">
               "Experiência única e transformadora."
             </p>
-            <span className="block mt-4 font-semibold">— João Santos</span>
+            <span className="block mt-4 font-semibold text-white">— João Santos</span>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="p-8 rounded-2xl shadow-md text-center bg-black/10">
-            <p className="text-lg italic">
+            <p className="text-lg italic text-white">
               "Recomendo para todos que amam aventura!"
             </p>
-            <span className="block mt-4 font-semibold">— Ana Costa</span>
+            <span className="block mt-4 font-semibold text-white">— Ana Costa</span>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="p-8 rounded-2xl shadow-md text-center bg-black/10">
-            <p className="text-lg italic">
+            <p className="text-lg italic text-white">
               "A África é um destino que todos deveriam conhecer."
             </p>
-            <span className="block mt-4 font-semibold">— Carlos Pereira</span>
+            <span className="block mt-4 font-semibold text-white">— Carlos Pereira</span>
           </div>
         </SwiperSlide>
       </Swiper>

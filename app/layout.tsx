@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Noto_Sans_Arabic, Inter} from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 
 const inter = Inter({
   subsets: ["latin"],
-  display: "swap",
+  weight: ["400", "700"]
 });
 
 export const metadata: Metadata = {
-  title: "Africa Tours",
-  description: "Explore os melhores destinos de viagem na África com a Africa Tours. Oferecemos pacotes exclusivos para safáris, praias paradisíacas e experiências culturais únicas. Descubra a beleza e a diversidade do continente africano conosco!",
+  title: "Egito Viagens - Pacotes de Viagem para o Egito",
+  description: "Egito Viagens oferece pacotes de viagem exclusivos para explorar os melhores destinos na África.",
 };
 
 export default function RootLayout({

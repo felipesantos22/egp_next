@@ -20,12 +20,12 @@ export default function Home() {
 
   return (
     <div>
-      <div className="mx-2 mt-20 mb-2">
+      <div className="mx-2 mt-25 mb-2">
         <Carousel />
       </div>
 
       <div className="bg-gray-50 h-40 mx-2 flex flex-col items-center justify-center text-center p-4">
-        <h1 className="text-4xl font-bold mt-4">Africa Tours</h1>
+        <h1 className="text-4xl font-bold my-4 underline uppercase">Egito Viagens</h1>
         <p>Escolha um determinado destino e vá em frente!</p>
       </div>
 
@@ -54,27 +54,28 @@ export default function Home() {
           />
         ))}
       </div>
+
       <h1 className="text-center mt-15 mb-4 text-4xl font-bold">
         Experiências de nossos viajantes
       </h1>
       <div className="flex flex-wrap justify-around mt-10 mb-20 mx-2 p-4">
-        <div className="mb-4">
+        <div className="mb-4 -rotate-15">
           <Image
-            src="/images/magazine.jpg"
+            src="/images/magazine01.png"
             alt="Experiências de nossos viajantes"
-            width={300}
-            height={200}
+            width={250}
+            height={250}
           />
         </div>
         <div className="flex flex-col">
           <p className="mx-2 text-lg max-w-md text-justify">
-            Viajar para a África é uma experiência ÚNICA, diferente de qualquer
+            Viajar para o Egito é uma experiência ÚNICA, diferente de qualquer
             outra viagem que se possa fazer. Nossos clientes fazem questão de
             deixar isso claro através de seus depoimentos. É difícil mensurar a
             satisfação e a felicidade de cada um, visto que, frequentemente,
             recebemos ligações de agradecimento e relatos de viajantes que
-            retornam da África com a alma leve e uma nova visão sobre o mundo e
-            sobre suas próprias vidas. A África é uma viagem que transcende!
+            retornam do Egito com a alma leve e uma nova visão sobre o mundo e
+            sobre suas próprias vidas. O Egito é uma viagem que transcende!
             Acompanhem, clicando abaixo.
           </p>
           <button className="bg-amber-300 text-white px-4 py-2 rounded-md mt-4">

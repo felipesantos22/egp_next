@@ -1,10 +1,12 @@
+import { url } from "inspector";
+
 export const pacotes = [
   {
     id: 1,
     title: "Egito Básico",
     description: "Roteiro 4 dias",
     image: "/images/img01.jpg",
-    country: "egito",
+    country: "Egito",
     slug: "egito-basico-4-dias",
   },
   {
@@ -12,7 +14,7 @@ export const pacotes = [
     title: "Egito Clássico",
     description: "Roteiro 7 dias",
     image: "/images/nilo.jpg",
-    country: "egito",
+    country: "Egito",
     slug: "egito-classico-7-dias",
   },
   {
@@ -20,7 +22,7 @@ export const pacotes = [
     title: "Egito Keops",
     description: "Roteiro 8 dias",
     image: "/images/p-giza.jpg",
-    country: "egito",
+    country: "Egito",
     slug: "egito-keops-9-dias",
   },
   {
@@ -28,7 +30,7 @@ export const pacotes = [
     title: "Egito Fantástico",
     description: "Roteiro 9 dias",
     image: "/images/img02.jpg",
-    country: "egito",
+    country: "Egito",
     slug: "egito-fantastico-9-dias",
   },
   {
@@ -36,7 +38,7 @@ export const pacotes = [
     title: "Egito Tutmosis",
     description: "Roteiro 10 dias",
     image: "/images/img03.jpg",
-    country: "egito",
+    country: "Egito",
     slug: "egito-tutmosis-10-dias",
   },
   {
@@ -44,7 +46,7 @@ export const pacotes = [
     title: "Egito Kefren",
     description: "Roteiro 10 dias",
     image: "/images/img04.jpg",
-    country: "egito",
+    country: "Egito",
     slug: "egito-kefren-10-dias",
   },
   {
@@ -52,7 +54,7 @@ export const pacotes = [
     title: "Egito com Sharm El Sheikh",
     description: "Roteiro 12 dias",
     image: "/images/img05.jpg",
-    country: "egito",
+    country: "Egito",
     slug: "egito-com-sharm-el-sheikh-12-dias",
   },
   {
@@ -60,15 +62,15 @@ export const pacotes = [
     title: "Egito Ramsés",
     description: "Roteiro 12 dias",
     image: "/images/img06.jpg",
-    country: "egito",
+    country: "Egito",
     slug: "egito-ramsés-12-dias",
   },
   {
     id: 9,
     title: "Egito Com Dubai e Abu Dhabi",
     description: "Roteiro 12 dias",
-    image: "/images/img07.jpg",
-    country: "egito",
+    image: "/images/dubai.jpg",
+    country: "Egito",
     slug: "egito-com-dubai-e-abu-dhabi-12-dias",
   },
   {
@@ -76,7 +78,7 @@ export const pacotes = [
     title: "Egito Completo",
     description: "Roteiro 14 dias",
     image: "/images/img08.jpg",
-    country: "egito",
+    country: "Egito",
     slug: "egito-completo-14-dias",
   },
   {
@@ -84,15 +86,15 @@ export const pacotes = [
     title: "Expedição Egito",
     description: "Roteiro 17 dias",
     image: "/images/img09.jpg",
-    country: "egito",
+    country: "Egito",
     slug: "egito-17-dias",
   },
   {
     id: 12,
     title: "Dubai e Abu Dhabi",
     description: "Roteiro 5 dias",
-    image: "/images/p-giza.jpg",
-    country: "dubai",
+    image: "/images/dubai01.jpg",
+    country: "Dubai",
     slug: "dubai-e-abu-dhabi-5-dias",
   },
 ];

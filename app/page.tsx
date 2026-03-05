@@ -13,10 +13,10 @@ export default function Home() {
   const pacotesFiltrados =
     paisSelecionado === "Todos"
       ? pacotes
-      : pacotes.filter((item) => item.title === paisSelecionado);
+      : pacotes.filter((item) => item.country === paisSelecionado);
 
   // pegar países únicos automaticamente
-  const paises = ["Todos", ...new Set(pacotes.map((p) => p.title))];
+  const paises = ["Todos", ...new Set(pacotes.map((p) => p.country))];
 
   return (
     <div>
@@ -55,16 +55,16 @@ export default function Home() {
         ))}
       </div>
 
-      <h1 className="text-center mt-15 mb-4 text-4xl font-bold">
+      <h1 className="text-center mt-15 mb-4 text-4xl font-bold underline uppercase">
         Experiências de nossos viajantes
       </h1>
-      <div className="flex flex-wrap justify-around mt-10 mb-20 mx-2 p-4">
-        <div className="mb-4 -rotate-15">
+      <div className="flex flex-wrap justify-around mt-10 mb-20 mx-2 p-4 bg-gray-50">
+        <div className="mb-8 -rotate-15 animate-none">
           <Image
             src="/images/magazine01.png"
             alt="Experiências de nossos viajantes"
-            width={250}
-            height={250}
+            width={200}
+            height={200}
           />
         </div>
         <div className="flex flex-col">
@@ -78,7 +78,7 @@ export default function Home() {
             sobre suas próprias vidas. O Egito é uma viagem que transcende!
             Acompanhem, clicando abaixo.
           </p>
-          <button className="bg-amber-300 text-white px-4 py-2 rounded-md mt-4">
+          <button className="bg-amber-500 text-white px-4 py-2 rounded-md mt-4">
             Ver mais
           </button>
         </div>

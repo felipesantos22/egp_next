@@ -5,7 +5,7 @@ import { egito_4_dias } from "@/data/tm-egito-4-dias";
 export default function EGPBasico() {
   return (
     <div className="min-h-screen bg-gray-50 my-25 mx-2 pt-10">
-      <h1 className="text-5xl font-bold text-center mb-10">Egito Básico</h1>
+      <h1 className="text-5xl font-medium text-center mb-10">Egito Básico</h1>
       <CarouselPages />
       <h2 className="text-2xl font-semibold pl-10 mt-10 text-amber-500">
         Visitaremos:
@@ -19,7 +19,7 @@ export default function EGPBasico() {
       </p>
 
       <section className="py-10">
-        <h2 className="text-3xl font-bold mb-8 text-center underline">
+        <h2 className="text-3xl font-medium mb-8 text-center underline">
           Roteiro da Viagem
         </h2>
 

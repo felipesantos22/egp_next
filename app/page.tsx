@@ -83,7 +83,7 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <div className="bg-[url('/images/img05.jpg')] bg-cover bg-center bg-fixed h-150 m-2 flex flex-col items-center justify-center text-center p-4 rounded-2xl shadow-lg">
+      <div className="bg-[url('/images/dubai.jpg')] bg-cover bg-center bg-fixed h-150 m-2 flex flex-col items-center justify-center text-center p-4 rounded-2xl shadow-lg">
         <Testimonials />
       </div>
     </div>

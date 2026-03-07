@@ -25,7 +25,9 @@ export default function Home() {
       </div>
 
       <div className="bg-gray-50 h-40 mx-2 flex flex-col items-center justify-center text-center p-4">
-        <h1 className="text-4xl font-bold my-4 underline uppercase">Egito Viagens</h1>
+        <h1 className="text-4xl font-bold my-4 underline uppercase">
+          Egito Viagens
+        </h1>
         <p>Escolha um determinado destino e vá em frente!</p>
       </div>
 
@@ -83,7 +85,23 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <div className="bg-[url('/images/dubai.jpg')] bg-cover bg-center bg-fixed h-150 m-2 flex flex-col items-center justify-center text-center p-4 rounded-2xl shadow-lg">
+      <div
+        className="
+  bg-[url('/images/dubai.jpg')]
+  bg-cover
+  bg-center
+  bg-scroll md:bg-fixed
+  h-80 md:h-150
+  m-2 md:m-6
+  flex flex-col
+  items-center
+  justify-center
+  text-center
+  p-4 md:p-10
+  rounded-2xl
+  shadow-lg
+"
+      >
         <Testimonials />
       </div>
     </div>

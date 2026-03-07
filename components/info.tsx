@@ -83,8 +83,8 @@ export default function ImportantInfo() {
         </ol>
       </section>
       <div className="flex flex-col items-center mt-10">
-        <h2 className="mt-10 ml-10">Condições de Pagamento:</h2>
-        <p className="ml-10">Consulte formas de pagamento e parcelamento.</p>
+        <h2 className="mt-10 ml-10 text-center">Condições de Pagamento:</h2>
+        <p className="ml-10 text-center">Consulte formas de pagamento e parcelamento.</p>
         <button className="ml-10 my-5 bg-amber-500 text-white px-6 py-3 rounded-md hover:bg-amber-600 transition-colors">
           Consulte
         </button>

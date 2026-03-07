@@ -5,9 +5,6 @@ export default function TableEgp4Dias() {
         Hotéis Previstos ou similares
       </h2>
       <table className="border border-gray-300 w-full">
-        <caption className="caption-top">
-          Table 3.1: Professional wrestlers and their signature moves.
-        </caption>
         <thead>
           <tr className="bg-gray-100">
             <th className="border px-4 py-2">Cidade</th>

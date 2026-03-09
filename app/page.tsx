@@ -60,8 +60,8 @@ export default function Home() {
       <h1 className="text-center mt-15 mb-4 text-4xl font-bold underline uppercase">
         Experiências de nossos viajantes
       </h1>
-      <div className="flex flex-wrap justify-around mt-10 mb-4 p-4 bg-gray-50">
-        <div className="mb-8 mt-8 -rotate-15 animate-none">
+      <div className="flex flex-wrap items-center justify-around mb-4 p-4 bg-gray-50">
+        <div className="mb-8">
           <Image
             src="/images/magazine01.png"
             alt="Experiências de nossos viajantes"

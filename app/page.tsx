@@ -19,19 +19,19 @@ export default function Home() {
   const paises = ["Todos", ...new Set(pacotes.map((p) => p.country))];
 
   return (
-    <div>
-      <div className="mx-2 mt-25 mb-2">
+    <div className="m-2 bg-gray-50">
+      <div className="mt-25 mb-2">
         <Carousel />
       </div>
 
-      <div className="bg-gray-50 h-40 mx-2 flex flex-col items-center justify-center text-center p-4">
+      <div className="bg-gray-50 h-40 flex flex-col items-center justify-center text-center p-4 mb-2">
         <h1 className="text-4xl font-bold my-4 underline uppercase">
           Egito Viagens
         </h1>
         <p>Escolha um determinado destino e vá em frente!</p>
       </div>
 
-      <div className="flex items-center justify-end p-4 bg-gray-50">
+      <div className="flex items-center justify-end p-4 bg-gray-50 mb-2">
         <select
           value={paisSelecionado}
           onChange={(e) => setPaisSelecionado(e.target.value)}
@@ -45,7 +45,7 @@ export default function Home() {
         </select>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-6 p-2 bg-gray-50">
+      <div className="grid md:grid-cols-3 gap-6 bg-gray-50">
         {pacotesFiltrados.map((item) => (
           <Card
             key={item.id}
@@ -60,13 +60,13 @@ export default function Home() {
       <h1 className="text-center mt-15 mb-4 text-4xl font-bold underline uppercase">
         Experiências de nossos viajantes
       </h1>
-      <div className="flex flex-wrap justify-around mt-10 mb-20 mx-2 p-4 bg-gray-50">
-        <div className="mb-8 -rotate-15 animate-none">
+      <div className="flex flex-wrap justify-around mt-10 mb-4 p-4 bg-gray-50">
+        <div className="mb-8 mt-8 -rotate-15 animate-none">
           <Image
             src="/images/magazine01.png"
             alt="Experiências de nossos viajantes"
             width={200}
-            height={200}
+            height={300}
           />
         </div>
         <div className="flex flex-col">
@@ -85,23 +85,7 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <div
-        className="
-  bg-[url('/images/dubai.jpg')]
-  bg-cover
-  bg-center
-  bg-scroll md:bg-fixed
-  h-80 md:h-150
-  m-2 md:m-6
-  flex flex-col
-  items-center
-  justify-center
-  text-center
-  p-4 md:p-10
-  rounded-2xl
-  shadow-lg
-"
-      >
+      <div className="bg-[url('/images/dubai.jpg')] bg-cover bg-center bg-scroll md:bg-fixed h-120 md:h-150 flex flex-col items-center justify-center text-center rounded-2xl shadow-lg">
         <Testimonials />
       </div>
     </div>

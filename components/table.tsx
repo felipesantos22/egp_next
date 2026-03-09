@@ -27,7 +27,11 @@ export default function PackageIncludes() {
           <ul className="list-disc list-inside space-y-2 text-gray-700">
             <li>Voos internacionais</li>
             <li>Seguro viagem obrigatório</li>
-            <li>Visto de entrada no Egito</li>
+            <li>
+              Visto de entrada no Egito 40 USD por pessoa ( Poderá ser retirado
+              na chegada ao Cairo com a assistência de nossos representantes,
+              consulte-nos a respeito )
+            </li>
             <li>Entradas nos locais mencionados</li>
             <li>Bebidas e despesas pessoais</li>
             <li>Gorjetas para motorista e guia</li>

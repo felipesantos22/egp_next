@@ -77,14 +77,6 @@ export default function Header() {
                 Contato
               </a>
             </li>
-            <li>
-              <a
-                href="/agente"
-                className="block py-2 text-gray-600 hover:text-amber-500"
-              >
-                Agente
-              </a>
-            </li>
           </ul>
         </nav>
       </div>

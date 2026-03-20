@@ -18,7 +18,7 @@ export default function Footer() {
         />
       </a>
 
-      <p>&copy; 2026 Egito Viagens. Todos os direitos reservados.</p>
+      <p className="text-center">&copy; 2026 Egito Viagens. Todos os direitos reservados.</p>
     </footer>
   );
 }

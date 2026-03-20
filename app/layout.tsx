@@ -12,6 +12,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Egito Viagens - Pacotes de Viagem para o Egito",
   description: "Egito Viagens oferece pacotes de viagem exclusivos para explorar os melhores destinos na África.",
+  verification:{
+    google:"google73f8ade19c8ddcdb.html"
+  }
 };
 
 export default function RootLayout({

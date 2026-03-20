@@ -36,7 +36,7 @@ export default function PerguntasPage() {
 
   return (
     <div className="min-h-screen mx-2">
-      <h1 className="text-3xl font-light mb-6 mt-30 underline decoration-amber-500 text-center">Perguntas Frequentes</h1>
+      <h1 className="text-3xl font-light mb-6 mt-30 underline decoration-solid text-center">Perguntas Frequentes</h1>
 
       <div className="flex gap-2">
         <input

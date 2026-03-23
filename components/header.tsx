@@ -8,89 +8,70 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 0);
-    };
-
+    const handleScroll = () => setScrolled(window.scrollY > 10);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <header
-      className={`h-20 flex justify-evenly items-center font-bold fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-gray-50 text-black shadow-md" : "bg-transparent text-black"
+      className={`fixed w-full z-50 transition-all duration-300 ${
+        scrolled ? "bg-white/70 backdrop-blur-md shadow-md" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-0 flex items-center justify-between">
+      <div className="container mx-auto px-4 h-20 flex items-center justify-between">
+        {/* Logo */}
         <Image
           src="/images/logo.png"
           alt="Logo Egito Viagens"
-          width={80}
-          height={80}
+          width={70}
+          height={70}
         />
 
         {/* Botão mobile */}
         <button
-          className="md:hidden text-gray-700"
+          className="md:hidden text-2xl transition-all"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          ☰
+          {menuOpen ? "✕" : "☰"}
         </button>
 
         {/* Menu */}
         <nav
-          className={`${menuOpen ? "block" : "hidden"} absolute top-full left-0 w-full md:static md:block md:w-auto`}
+          className={`
+            absolute md:static top-full left-0 w-full md:w-auto
+            transition-all duration-300 ease-in-out
+            ${
+              menuOpen
+                ? "opacity-100 visible translate-y-0"
+                : "opacity-0 invisible -translate-y-5 md:opacity-100 md:visible md:translate-y-0"
+            }
+            bg-white md:bg-transparent shadow-md md:shadow-none
+          `}
         >
-          <ul className="flex flex-col md:flex-row md:space-x-4 p-4 md:p-4 text-lg">
-            <li>
-              <a
-                href="/"
-                className="block py-2 text-gray-50 hover:text-amber-500"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="/pacotes"
-                className="block py-2 text-gray-50 hover:text-amber-500"
-              >
-                Quem Somos
-              </a>
-            </li>
-            <li>
-              <a
-                href="/seguro"
-                className="block py-2 text-gray-50 hover:text-amber-500"
-              >
-                Seguro Viagem
-              </a>
-            </li>
-            <li>
-              <a
-                href="/docs"
-                className="block py-2 text-gray-50 hover:text-amber-500"
-              >
-                Documentos
-              </a>
-            </li>
-            <li>
-              <a
-                href="/perguntas"
-                className="block py-2 text-gray-50 hover:text-amber-500"
-              >
-                Perguntas
-              </a>
-            </li>
-            <li>
-              <a
-                href="/contato"
-                className="block py-2 text-gray-50 hover:text-amber-500"
-              >
-                Contato
-              </a>
-            </li>
+          <ul className="flex flex-col md:flex-row md:space-x-6 p-6 md:p-0 text-lg font-medium">
+            {[
+              { name: "Home", href: "/" },
+              { name: "Quem Somos", href: "/pacotes" },
+              { name: "Seguro Viagem", href: "/seguro" },
+              { name: "Documentos", href: "/docs" },
+              { name: "Perguntas", href: "/perguntas" },
+              { name: "Contato", href: "/contato" },
+            ].map((item) => (
+              <li key={item.name}>
+                <a
+                  href={item.href}
+                  onClick={() => setMenuOpen(false)}
+                  className={`block py-2 transition-colors duration-200 ${
+                    scrolled
+                      ? "text-gray-800 hover:text-amber-500"
+                      : "text-gray-800 md:text-white hover:text-amber-400"
+                  }`}
+                >
+                  {item.name}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>

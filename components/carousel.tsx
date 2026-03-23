@@ -18,10 +18,10 @@ export default function Carousel() {
         pagination={{ clickable: true }}
         autoplay={{ delay: 5000 }}
         loop
-        className="rounded-2xl shadow-lg"
+        className="shadow-lg"
       >
         <SwiperSlide>
-          <img src="/images/dubai.jpg" className="w-full h-150 object-cover" />
+          <img src="/images/egp19.jpg" className="w-full h-180 object-cover" />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
             <h2 className="text-5xl md:text-4xl font-bold md:whitespace-nowrap">
               Guias em português, espanhol e inglês.
@@ -31,7 +31,7 @@ export default function Carousel() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <img src="/images/img04.jpg" className="w-full h-150 object-cover" />
+          <img src="/images/img04.jpg" className="w-full h-180 object-cover" />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
             <h2 className="text-5xl md:text-4xl font-bold md:whitespace-nowrap">
               Ofercemos o melhor do Egito, Turquia e Dubai para você.

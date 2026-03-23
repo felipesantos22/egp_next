@@ -19,19 +19,19 @@ export default function Home() {
   const paises = ["Todos", ...new Set(pacotes.map((p) => p.country))];
 
   return (
-    <div className="m-2 bg-gray-50">
-      <div className="mt-25 mb-2">
+    <div className="bg-gray-50">
+      <div className="mb-2">
         <Carousel />
       </div>
 
-      <div className="bg-gray-50 h-40 flex flex-col items-center justify-center text-center p-4 mb-2">
+      <div className="bg-gray-50 h-40 flex flex-col items-center justify-center text-center p-4 m-2">
         <h1 className="text-4xl font-bold my-4 underline uppercase">
           Egito Viagens
         </h1>
         <p>Escolha um determinado destino e vá em frente!</p>
       </div>
 
-      <div className="flex items-center justify-end p-4 bg-gray-50 mb-2">
+      <div className="flex items-center justify-end p-4 bg-gray-50 m-2">
         <select
           value={paisSelecionado}
           onChange={(e) => setPaisSelecionado(e.target.value)}
@@ -45,7 +45,7 @@ export default function Home() {
         </select>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-6 bg-gray-50">
+      <div className="grid md:grid-cols-3 gap-6 bg-gray-50 m-2">
         {pacotesFiltrados.map((item) => (
           <Card
             key={item.id}
@@ -85,7 +85,7 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <div className="bg-[url('/images/dubai.jpg')] bg-cover bg-center bg-scroll md:bg-fixed h-120 md:h-150 flex flex-col items-center justify-center text-center rounded-2xl shadow-lg">
+      <div className="bg-[url('/images/dubai.jpg')] bg-cover bg-center bg-scroll md:bg-fixed h-120 md:h-150 flex flex-col items-center justify-center text-center rounded-2xl shadow-lg m-2">
         <Testimonials />
       </div>
     </div>

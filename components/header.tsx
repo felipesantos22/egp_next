@@ -1,14 +1,28 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="bg-gray-50 shadow-md py-2 fixed top-0 right-0 left-0 z-10">
-      <div className="container mx-auto px-4 flex items-center justify-between">
+    <header
+      className={`h-20 flex justify-evenly items-center font-bold fixed w-full z-50 transition-all duration-300 ${
+        scrolled ? "bg-gray-50 text-black shadow-md" : "bg-transparent text-black"
+      }`}
+    >
+      <div className="container mx-auto px-0 flex items-center justify-between">
         <Image
           src="/images/logo.png"
           alt="Logo Egito Viagens"
@@ -26,13 +40,13 @@ export default function Header() {
 
         {/* Menu */}
         <nav
-          className={`${menuOpen ? "block" : "hidden"} absolute top-full left-0 w-full bg-gray-50 md:static md:block md:w-auto`}
+          className={`${menuOpen ? "block" : "hidden"} absolute top-full left-0 w-full md:static md:block md:w-auto`}
         >
-          <ul className="flex flex-col md:flex-row md:space-x-4 p-4 md:p-0">
+          <ul className="flex flex-col md:flex-row md:space-x-4 p-4 md:p-4 text-lg">
             <li>
               <a
                 href="/"
-                className="block py-2 text-gray-600 hover:text-amber-500"
+                className="block py-2 text-gray-50 hover:text-amber-500"
               >
                 Home
               </a>
@@ -40,7 +54,7 @@ export default function Header() {
             <li>
               <a
                 href="/pacotes"
-                className="block py-2 text-gray-600 hover:text-amber-500"
+                className="block py-2 text-gray-50 hover:text-amber-500"
               >
                 Quem Somos
               </a>
@@ -48,7 +62,7 @@ export default function Header() {
             <li>
               <a
                 href="/seguro"
-                className="block py-2 text-gray-600 hover:text-amber-500"
+                className="block py-2 text-gray-50 hover:text-amber-500"
               >
                 Seguro Viagem
               </a>
@@ -56,7 +70,7 @@ export default function Header() {
             <li>
               <a
                 href="/docs"
-                className="block py-2 text-gray-600 hover:text-amber-500"
+                className="block py-2 text-gray-50 hover:text-amber-500"
               >
                 Documentos
               </a>
@@ -64,7 +78,7 @@ export default function Header() {
             <li>
               <a
                 href="/perguntas"
-                className="block py-2 text-gray-600 hover:text-amber-500"
+                className="block py-2 text-gray-50 hover:text-amber-500"
               >
                 Perguntas
               </a>
@@ -72,7 +86,7 @@ export default function Header() {
             <li>
               <a
                 href="/contato"
-                className="block py-2 text-gray-600 hover:text-amber-500"
+                className="block py-2 text-gray-50 hover:text-amber-500"
               >
                 Contato
               </a>

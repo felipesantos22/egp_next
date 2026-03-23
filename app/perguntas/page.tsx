@@ -9,7 +9,7 @@ export default function PerguntasPage() {
 
   const ask = async () => {
     try {
-      const res = await fetch("http://localhost:8000/questions/", {
+      const res = await fetch("https://ragone-production.up.railway.app/questions", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -35,10 +35,13 @@ export default function PerguntasPage() {
   };
 
   return (
-    <div className="min-h-screen mx-2">
-      <h1 className="text-3xl font-light mb-6 mt-30 underline decoration-solid text-center">Perguntas Frequentes</h1>
+    <div className="min-h-screen bg-[url(/images/img08.jpg)] bg-center bg-cover bg-no-repeat pt-30">
 
-      <div className="flex gap-2">
+      <h1 className="text-3xl font-light underline decoration-solid text-center mb-10">
+        Perguntas Frequentes
+      </h1>
+
+      <div className="flex gap-2 p-2">
         <input
           className="border p-3 rounded w-full"
           placeholder="Digite sua pergunta..."
@@ -49,13 +52,13 @@ export default function PerguntasPage() {
         <button
           onClick={ask}
           disabled={loading}
-          className="bg-blue-500 text-white px-4 rounded disabled:opacity-50"
+          className="bg-black text-white px-4 rounded disabled:opacity-50"
         >
           {loading ? "Carregando..." : "Perguntar"}
         </button>
       </div>
 
-      {answer && <div className="mt-8 p-4 bg-gray-100 rounded">{answer}</div>}
+      {answer && <div className="mt-8 p-4 bg-gray-300 mx-2 rounded">{answer}</div>}
     </div>
   );
 }

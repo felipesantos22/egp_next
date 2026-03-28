@@ -35,7 +35,7 @@ export default function PerguntasPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[url(/images/img08.jpg)] bg-center bg-cover bg-no-repeat pt-30">
+    <div className="min-h-screen bg-[url(/images/img03.jpg)] bg-center bg-cover bg-no-repeat pt-30">
 
       <h1 className="text-3xl font-light underline decoration-solid text-center mb-10">
         Perguntas Frequentes
